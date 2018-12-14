@@ -12,9 +12,12 @@ AWS Secret Access Key: "fakeSecretAccessKey"
 ```
 
 ### 启动
-将下载的包解压缩，在 DynamoDBLocal.jar 的目录 Gitbash或CMD执行 `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb`
-如果是Windows PowerShell则执行 `java -D"java.library.path=./DynamoDBLocal_lib" -jar DynamoDBLocal.jar`
-默认情况下，DynamoDB 使用端口 8000。修改端口启动:`java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -port 8001
+将下载的包解压缩，在 DynamoDBLocal.jar 的目录 Gitbash或CMD执行：
+ `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb`
+如果是Windows PowerShell则执行：
+ `java -D"java.library.path=./DynamoDBLocal_lib" -jar DynamoDBLocal.jar`
+默认情况下，DynamoDB 使用端口 8000。修改端口启动:
+ `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -port 8001`
 
 ### 访问本地运行的 DynamoDB
 aws dynamodb list-tables --endpoint-url http://localhost:8001
